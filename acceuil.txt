@@ -1,0 +1,147 @@
+ 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Restaurant hiba </title>
+    <style>
+        body {/*pour cibler tous les elements de body */
+            background-color: #ece5e5;/*Définit la couleur de fond de la page*/
+            color: #070c07;/* Définit la couleur du texte*/
+            font-family:  sans-serif;/* Spécifie la police*/
+            min-height: 100vh;/*la hauter minimal*/
+        }
+        nav {
+            background-color: #788d70;/*Définit la couleur de fond de la barre de navigation*/
+            text-align: center;
+            padding: 10px;/*ajouter une espace dans la barre de navigateurs*/
+            margin-bottom: 10px; /* Ajoute de l'espace entre l'image et la barre de navigation */
+        }
+        nav a {/*cibles les element a l'interieur de navigateurs */
+            color: rgb(46, 82, 57);
+            padding: 100px 10px;/* Ajoute un espace intérieur de 100 pixels en haut et en bas et de 10 pixels à gauche et à droite des liens de navigation.*/
+            margin: 25px;/*creation d'une espace */
+        
+        }
+        header {/*espace en haut */
+            text-align: center;
+            padding: 25px;
+        }
+        
+        header img {
+            float: left;
+            width: 50%;
+            height: auto;
+            margin-right: 10px; /* Ajoute de l'espace entre l'image et le paragraphe */
+            margin-bottom: 20px; /* Ajoute de l'espace entre l'image et la barre verte */
+        }
+        .restaurant-description {
+            color: #080707;
+            padding-top: 1px;/*espace entre abarre et le texte */
+            padding-left: 20px;/*espace entre l'image et le texte */
+            overflow: hidden; /* éviter que le contenu ne dépasse les limites  */
+        }
+        .restaurant-description h2 {
+            font-size: 25px;/*la taille de bienvenu*/
+            margin-bottom: 10px;/*espace entre bienvenue et le texte*/
+            color: #40644d;/*la couleur de bienvenue*/
+        }
+        section {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .restaurant-description p {
+            font-size: 22px;/*la taille de texte */
+            line-height: 1.6;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 10px 0;/*l'espace entre la derniere phrase*/
+        }
+        /* Styles pour les sections HORAIRES, SUIVEZ-NOUS, CONTACTEZ-NOUS et NOUS SOMMES ICI */
+        .info-sections {/*pour les bares*/
+            display: flex;/*petit*/
+            flex-wrap: wrap;/*pour la bienne organisation */
+            justify-content: space-around;/*poserau milieu*/
+            margin-top: 10px;/*l'espace entre les bares et le texte*/
+        }
+        .info-section {
+            flex-basis: calc(25% - 50px);
+            margin: 10px;/*la taille entre les deus bares*/
+            background-color: #99b49f;
+            padding: 20px; /*la largeur*/
+            border-radius: 10px;/*le cercle*/
+        }
+        .info-section h2 {
+            
+            font-size: 25px;/*la taille des barre*/
+            color: #fff;
+        }
+        .info-section p {
+            margin-bottom: 10px;/*la largeur*/
+            color: #fff;
+        }
+        
+    </style>
+</head>
+<body>
+
+<header>
+    <h1 style="color: rgb(5, 83, 5); font-size: 60px;  ">Vitalité Verte</h1>
+</header>
+
+<nav>
+    <a href="indexx.html">Accueil</a>
+    <a href="menu.html">Menu</a>
+    <a href="propos.html">À propos</a>
+    <a href="reservation.html">Réserver</a>
+
+</nav>
+<header>
+    <div  class="header-content">
+        <img src="https://i.pinimg.com/564x/86/6c/d2/866cd2867f9f2b7e6e3594fb1b8230dd.jpg" alt="Image de l'en-tête">
+        <div class="restaurant-description">
+            <h2>🥗 Bienvenue chez Vitalité Verte  ! 🥗</h2>
+            <p>Découvrez une expérience culinaire unique où la santé rencontre la gourmandise. Chez Vitalité Verte, nous croyons que bien manger ne devrait jamais compromettre le plaisir. C'est pourquoi nous avons créé un menu inspiré par la fraîcheur, l'équilibre et la vitalité.</p>
+            <p>🌱 Des ingrédients frais et locaux : Notre engagement envers la qualité commence avec nos ingrédients. Nous sélectionnons soigneusement chaque produit pour vous offrir le meilleur de ce que la nature a à offrir, en privilégiant les fournisseurs locaux chaque fois que possible.</p>
+            <p>🌟 Une ambiance chaleureuse et accueillante : Venez vous détendre dans notre atmosphère conviviale et décontractée. Que ce soit pour un déjeuner entre amis, un dîner en famille ou un repas en solo, notre équipe attentionnée est là pour vous offrir un service exceptionnel à chaque visite. Rejoignez-nous chez Vitalité Verte et découvrez une nouvelle façon de savourer la vie, une bouchée à la fois. Réservez dès maintenant et laissez-nous vous guider dans un voyage gustatif où la santé et le bonheur se rencontrent harmonieusement.</p>
+        </div>
+    </div>
+</header>
+
+
+<!-- Ajout de la section HORAIRES, SUIVEZ-NOUS, CONTACTEZ-NOUS, et NOUS SOMMES ICI -->
+<div class="info-sections">
+    <div class="info-section">
+        <h2>HORAIRES</h2>
+        <p>Ouverts tous les jours 20:00 - 02:00</p>
+        <p>Lundi Fermé</p>
+    </div>
+    <div class="info-section">
+        <h2>SUIVEZ-NOUS</h2>
+        <p>Facebook</p>
+        <p>Instagram</p>
+    </div>
+    <div class="info-section">
+        <h2>CONTACTEZ-NOUS</h2>
+        <p>Rte Agdal, Marrakech 30000</p>
+        <p>06 00 00 00 00</p>
+        <p>VitalitéVerte@restauluxHiba.com</p>
+    </div>
+    <div class="info-section">
+        <h2>NOUS SOMMES ICI !</h2>
+        <!-- Ajoutez votre iframe pour la carte Google Maps ici -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27522.063928072137!2d-9.629763166144983!3d30.428787575378657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdafee8d96179e51%3A0x5950b6534f87adb8!2sMarrakech!5e0!3m2!1sfr!2sma!4v1714424775459" width="300" height="100" style="border: 0px;; margin-top: 5px;"></iframe>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Restaurant de HIBA. Tous droits réservés.</p>
+</footer>
+</body>
+</html>

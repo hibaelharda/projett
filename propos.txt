@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À propos - Vitalité Verte</title>
+    <style>
+        body {
+            background-color: #ece5e5;
+            color: #070c07;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+        }
+        nav {
+            background-color: #7e9177;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        nav a {
+            color: rgb(32, 59, 40);
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 50px 0;
+             
+        }
+        header h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+        .about-section {
+            padding: 20px;
+        }
+        .about-section h2 {
+            color: #105329;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .about-section p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #e3eedf;
+            color: #0f0d0d;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="indexx.html">Accueil</a>
+    <a href="menu.html">Menu</a>
+    <a href="propos.html">À propos</a>
+    <a href="reservation.html">Réserver</a>
+</nav>
+
+ 
+<div class="about-section">
+    <h2>Histoire du restaurant</h2>
+    <p>"Chez Vitalité Verte, notre histoire a commencé en 2010 avec une vision simple mais audacieuse : révolutionner l'industrie alimentaire en offrant des options de restauration rapide qui sont à la fois délicieuses et saines. Fondé par un groupe de passionnés de nutrition et de gastronomie, Vitalité Verte a été pionnier dans le concept de "Fast Food Sain".</br>
+        Nous avons rapidement compris que la nourriture rapide ne devait pas nécessairement être synonyme de malbouffe. Au contraire, nous avons décidé de créer un paradigme où chaque bouchée est une expérience de santé et de bien-être. </br>Notre mission était claire : offrir une alternative nutritive aux repas sur le pouce, sans compromis sur le goût ou la qualité des ingrédients. En combinant des recettes innovantes avec des ingrédients de haute qualité, biologiques et locaux autant que possible, Vitalité Verte est devenu un refuge pour les amateurs de cuisine saine et savoureuse.</br> Nous avons lancé notre premier restaurant dans le quartier animé de Downtown, où notre menu varié et équilibré a rapidement conquis le cœur de nos clients.
+        </p>
+
+    <h2>Philosophie culinaire</h2>
+    <p> Chez Vitalité Verte, notre philosophie culinaire repose sur la conviction profonde que la nourriture est bien plus qu'un simple carburant pour le corps. Nous croyons fermement que chaque bouchée devrait être une célébration de la santé, du bien-être et du plaisir gustatif.</br> Nos recettes sont élaborées avec soin pour équilibrer les saveurs, les textures et les couleurs, offrant ainsi une expérience culinaire harmonieuse et satisfaisante. Nous accordons une attention particulière à la présentation de nos plats, car nous croyons que l'esthétique joue un rôle important dans le plaisir de manger.</br> Enfin, nous sommes engagés à fournir à nos clients des informations claires et transparentes sur la provenance de nos ingrédients, les valeurs nutritionnelles de nos plats et les options alimentaires disponibles. Nous croyons en l'autonomie alimentaire de nos clients et nous nous efforçons de les accompagner dans leurs choix alimentaires pour une vie saine et équilibrée.</br></p>
+
+    <h2>Spécialités culinaires</h2>
+    <p> Bowls équilibrés : Des bols composés d'une base de grains entiers comme le quinoa ou le riz complet, garnis de légumes de saison, de protéines végétales comme le tofu ou les légumineuses, et accompagnés d'une sauce maison légère.</br> Salades créatives : Des salades fraîches et colorées préparées avec une variété de légumes, de fruits, de noix et de graines, accompagnées de vinaigrettes maison à base d'huiles saines comme l'huile d'olive ou l'huile de lin.</br> Plats végétariens et végétaliens : Une sélection de plats sans viande ni produits d'origine animale, mettant en valeur la richesse des légumes, des fruits, des céréales et des légumineuses, préparés avec des herbes fraîches et des épices pour une explosion de saveurs.</br>Desserts sains et gourmands : Des desserts élaborés avec des ingrédients naturels et sains comme les fruits frais, les noix, les graines et les alternatives sucrées naturelles comme le miel ou le sirop d'érable, pour une touche sucrée sans culpabilité.</br> Boissons chaudes réconfortantes : Des boissons chaudes comme des thés aux herbes, des infusions de fruits, des lattes au lait d'amande et au matcha, ou des chocolats chauds à base de lait végétal, pour se réchauffer tout en prenant soin de soi.</br></p>
+
+    <h2>Ambiance et atmosphère</h2>
+    <p>        
+        Chez Vitalité Verte, nous avons créé un espace chaleureux et accueillant où nos clients peuvent se détendre, se ressourcer et savourer des repas sains et délicieux. L'ambiance de notre restaurant est inspirée par la nature et la fraîcheur, avec des tons de vert apaisants, des matériaux naturels comme le bois et la pierre, et des plantes vertes luxuriantes qui ajoutent une touche de vie à l'espace.</br>
+        Lorsque vous entrez chez Vitalité Verte, vous êtes immédiatement enveloppé par une ambiance de bien-être et de sérénité. La musique douce et apaisante crée une atmosphère relaxante, tandis que les senteurs fraîches et aromatiques des plats qui mijotent dans la cuisine stimulent vos sens et ouvrent votre appétit..</p>
+
+    <h2>Engagement communautaire</h2>
+    <p> 
+        L'engagement communautaire est une valeur fondamentale pour Vitalité Verte. Nous croyons fermement en l'importance de soutenir et de contribuer au bien-être de notre communauté locale. Voici comment nous nous engageons :</br>
+        
+        Soutien aux producteurs locaux : Nous nous approvisionnons autant que possible auprès de producteurs locaux et de fournisseurs régionaux. En favorisant les produits locaux, nous soutenons l'économie locale et contribuons à réduire notre empreinte carbone.</br>
+        
+        Programmes de dons alimentaires : Nous collaborons avec des associations caritatives locales pour redistribuer les excédents alimentaires et les repas non consommés à ceux qui en ont le plus besoin. Nous sommes fiers de contribuer ainsi à lutter contre l'insécurité alimentaire dans notre communauté.</br>
+        
+        Éducation alimentaire : Nous organisons des ateliers et des événements éducatifs pour sensibiliser notre communauté à l'importance d'une alimentation saine et équilibrée. Nous partageons nos connaissances sur les bienfaits des aliments frais, biologiques et locaux, ainsi que sur les meilleures pratiques en matière de préparation des repas.etc.</p>
+
+    <h2>Récompenses et reconnaissances</h2>
+    <p> Bien que Vitalité Verte soit relativement récente, nous sommes fiers des reconnaissances et des récompenses que nous avons reçues pour notre engagement envers une cuisine saine et délicieuse, ainsi que pour notre contribution à la communauté. Voici quelques-unes de nos distinctions :</br>
+
+        Certification Bio : Nous avons reçu la certification biologique pour notre engagement à utiliser des ingrédients biologiques et à soutenir l'agriculture durable.</br>
+        
+        Mention dans la presse locale : Nous avons été présentés dans plusieurs publications locales pour notre approche novatrice de la restauration rapide saine.</br>
+        
+        Prix de l'Innovation Culinaire : Nous avons été honorés par l'Association des Chefs pour notre créativité et notre innovation dans la cuisine saine.</br>
+        
+        Récompense de Durabilité : Nous avons reçu une récompense de durabilité pour nos pratiques respectueuses de l'environnement, notamment notre utilisation de produits locaux et notre gestion des déchets.</p>
+
+    <h2>Équipe</h2>
+    <p>Chez Vitalité Verte, nous sommes fiers de notre équipe dévouée et passionnée, composée de professionnels talentueux qui partagent tous une passion pour la cuisine saine et délicieuse. Voici quelques membres clés de notre équipe :</br>
+        Chef Cuisinier - Marie Dubois : Marie est une chef cuisinière chevronnée, spécialisée dans la cuisine santé et la nutrition.</br>
+        Directeur Général - Elharda Hiba  : Elharda hiba est une entrepreneur passionné par la santé et la bien-être. </br>
+        Responsable du Service Client - Sophie Martin : Sophie est notre responsable du service client, chargée de garantir une expérience exceptionnelle à chaque visiteur de Vitalité Verte.</br>
+    </p>
+
+    <h2>Coordonnées</h2>
+    <p>Adresse : Rte Agdal, Marrakech 30000</p>
+    <p>Téléphone : 06 00 00 00 00</p>
+    <p>E-mail : <a href="VitalitéVerte@restauluxHiba.com">VitalitéVerte@restauluxHiba.com</a></p>
+    <p>Réseaux Sociaux :</p>
+    <ul>
+        <li><a href="https://www.facebook.com/vitaliteverte">Facebook</a></li>
+        <li><a href="https://www.instagram.com/vitaliteverte">Instagram</a></li>
+        <li><a href="https://twitter.com/vitaliteverte">Twitter</a></li>
+    </ul>
+    <p>N'hésitez pas à nous contacter pour toute demande d'information supplémentaire ou pour réserver une table. Nous avons hâte de vous accueillir chez Vitalité Verte !</p>
+</footer>
+ 
+    <h2>Horaires d'ouverture</h2>
+    <p> Ouverts tous les jours 20:00 - 02:00</br>
+
+        Lundi Fermé</p>
+
+     
+</div>
+
+<footer>
+    <p>&copy; 2024 Restaurant de Vitalité Verte. Tous droits réservés.</p>
+</footer>
+
+</body>
+</html>

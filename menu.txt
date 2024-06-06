@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Restaurant Hiba</title>
+    <style>
+        body {
+            background-color: #ece5e5;
+            color: #274e31;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background-color: #7a9174;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            color: rgb(14, 104, 41);
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #faf7f7;
+        }
+        header h1 {
+            color: rgb(45, 92, 45);
+            font-size: 48px;
+            margin: 0;
+        }
+        .menu-container {
+            text-align: center;
+            padding: 20px;
+        }
+        .menu-item {
+            display: inline-block;
+            width: 200px;
+            padding: 20px;
+            margin: 20px;
+            background-color: #b2c4b2;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        .menu-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .menu-item h3 {
+            color: #011308;
+            font-size: 18px;
+            margin-top: 0;
+        }
+        .menu-item img {
+            width: 150px;
+            height: 150px;
+            border-radius: 10%;
+            margin-bottom: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #eee9e9;
+            color: #0a0606;
+        }
+        .highlighted {
+            background-color: #516e5b;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Menu</h1>
+</header>
+<nav>
+    <a href="indexx.html">Accueil</a>
+    <a href="menu.html">Menu</a>
+    <a href="propos.html">À propos</a>
+    <a href="reservation.html">Réserver</a>
+</nav>
+
+<div class="menu-container">
+    <h2 style="color: #2a5e3f;">ENTREES</h2>
+    <div class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <h3>Salade de quinoa</h3>
+        <img src="https://i.pinimg.com/564x/cd/78/22/cd7822b25e011852a895c88029dc541a.jpg" alt="Salade de quinoa">
+         <p>prix:50dhs</p>
+    </div>
+    <div class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <h3>Rouleaux de printemps</h3>
+        <img src="https://i.pinimg.com/564x/4c/44/b3/4c44b3b74730da07dac221e110ffff12.jpg" alt="Rouleaux de printemps">
+        <p>prix:70dhs</p> 
+    </div>
+    <div class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <h3>Soupe aux légumes</h3>
+        <img src="https://i.pinimg.com/564x/e6/c1/70/e6c170f08bd2275b5642d5bf3cc1f817.jpg" alt="Soupe aux légumes">
+        <p>prix:80dhs</p>
+    </div>
+    <div class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <h3>Brochettes de tofu</h3>
+        <img src="https://i.pinimg.com/236x/d5/fd/15/d5fd15b4ea24d7e665214fa42cf29430.jpg" alt="Brochettes de tofu">
+        <p>prix:90dhs</p>
+    </div>
+    <div class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <h3>Hummus aux herbes</h3>
+        <img src="https://i.pinimg.com/564x/c1/6c/c8/c16cc8da6e15f3ff97930d89f3fb435b.jpg" alt="Hummus aux herbes">
+        <p>prix:50dhs</p>
+    </div>
+    <div class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <h3>Tartare de saumon</h3>
+        <img src="https://i.pinimg.com/236x/71/3b/ef/713bef703a386c18d298fa8c5264c6d8.jpg" alt="Tartare de saumon">
+        <p>prix:85dhs</p>
+    </div>
+    <div class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <h3>Bruschetta </h3>
+        <img src="https://i.pinimg.com/236x/bf/eb/1e/bfeb1ecbb83e253daf3a935be173b746.jpg" alt="Bruschetta à la tomate">
+        <p>prix:40dhs</p> 
+    </div>
+</div>
+<div class="menu-container">
+    <h2 style="color: #4b745a;"> PLATS PRINCIPAUX</h2>
+    <div class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <h3>Poisson rôti </h3>
+        <img src="https://i.pinimg.com/564x/54/03/0d/54030d74613f2560aaddcbcd5f234150.jpg" alt="Poisson rôti">
+         <p>prix:250dhs</p>
+    </div>
+    <div class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <h3>Poulet grillé</h3>
+        <img src="https://i.pinimg.com/236x/e5/61/5e/e5615ecae69f9d83b91f71d9d36dfdb9.jpg" alt="Poulet grillé">
+        <p>prix:150dhs</p> 
+    </div>
+    <div class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <h3>Curry de légumes</h3>
+        <img src="https://i.pinimg.com/236x/6a/99/5f/6a995fc14e94833fca47b942696b3cc8.jpg" alt="Curry de légumes">
+        <p>prix:140dhs</p>
+    </div>
+    <div class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <h3>Steak de tofu </h3>
+        <img src="https://i.pinimg.com/564x/24/04/43/2404430f24bd264167b941d52b6f41a7.jpg" alt="Steak de tofu">
+        <p>prix:150dhs</p>
+    </div>
+    <div class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <h3>Pâtes de courgettes </h3>
+        <img src="https://i.pinimg.com/564x/dd/d0/ba/ddd0ba0a74b0f8a9ac2a0505b2bfdce4.jpg" alt="Pâtes de courgettes">
+        <p>prix:250dhs</p>
+    </div>
+    <div class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <h3>Bol de Buddha</h3>
+        <img src="https://i.pinimg.com/236x/11/27/30/112730a17b51e4fa9c6d53e02cf56b0c.jpg" alt="Bol de Buddha">
+        <p>prix:200dhs</p>
+    </div>
+    <div class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <h3>Sauté de crevettes  </h3>
+        <img src="https://i.pinimg.com/564x/ea/c6/bb/eac6bba240e548d1754c1b8927d32e5b.jpg" alt="Sauté de crevettes">
+        <p>prix:150dhs</p> 
+    </div>
+</div>
+<div class="menu-container">
+    <h2 style="color: #42634f;"> DESSERTS </h2>
+    <div class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <h3>Salade de fruits </h3>
+        <img src="https://i.pinimg.com/236x/f9/24/09/f92409f78cc1655974234b005642a53e.jpg" alt="Salade de fruits">
+         <p>prix:80dhs</p>
+    </div>
+    <div class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <h3>Yaourt grec nature</h3>
+        <img src="https://i.pinimg.com/236x/03/7c/c0/037cc0bc89bc23254fe916395edc9525.jpg" alt="Yaourt grec nature">
+        <p>prix:75dhs</p> 
+    </div>
+    <div class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <h3>Smoothie bowl  </h3>
+        <img src="https://i.pinimg.com/236x/d9/94/40/d994400dc2b3d3140c591e48cc5a3b39.jpg" alt="Smoothie bowl  ">
+        <p>prix:90dhs</p>
+    </div>
+    <div class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <h3>Tartelettes aux fruits </h3>
+        <img src="https://i.pinimg.com/236x/d3/09/5c/d3095c73990a1fa5ac43db16f96fdfa8.jpg" alt="Tartelettes aux fruits">
+        <p>prix:100dhs</p>
+    </div>
+    <div class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <h3>Pudding de chia </h3>
+        <img src="https://i.pinimg.com/236x/b1/60/78/b1607862e704fb81dae4e182edb14ccd.jpg" alt="Pudding de chia">
+        <p>prix:80dhs</p>
+    </div>
+    <div class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <h3>Brochettes de fruits</h3>
+        <img src="https://i.pinimg.com/236x/d2/c3/4d/d2c34dd8a50d04fa622400d9e530553e.jpg" alt="Brochettes de fruits">
+        <p>prix:60dhs</p>
+    </div>
+    <div class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <h3>Barres énergétiques  </h3>
+        <img src="https://i.pinimg.com/236x/6a/2a/b1/6a2ab1fa4920147495c8be126871a920.jpg" alt="Barres énergétiques ">
+        <p>prix:90dhs</p> 
+    </div>
+</div>
+<div class="menu-container">
+    <h2 style="color: #3d5e4a;"> JUS </h2>
+    <div class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <h3>Smoothie vert  </h3>
+        <img src="https://i.pinimg.com/236x/8d/1d/ba/8d1dba0006abd6f026ad98c037028af9.jpg" alt="Smoothie vert ">
+         <p>prix:60dhs</p>
+    </div>
+    <div class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <h3>Jus de légumes</h3>
+        <img src="https://i.pinimg.com/236x/06/e1/70/06e1702af2f8e6934772a6160ac7b581.jpg" alt="Jus de légumes">
+        <p>prix:55dhs</p> 
+    </div>
+    <div class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <h3>Smoothie au tofu </h3>
+        <img src="https://i.pinimg.com/236x/23/7b/60/237b60f631a5ee3863c6b00a35d58502.jpg" alt="Smoothie au tofu  ">
+        <p>prix:80dhs</p>
+    </div>
+    <div class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <h3>Jus de carotte </h3>
+        <img src="https://i.pinimg.com/236x/a0/0c/92/a00c9217467cf3a9812405f128c0ed3a.jpg" alt="Jus de carotte">
+        <p>prix:60dhs</p>
+    </div>
+    <div class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <h3>Smoothie au beurre </h3>
+        <img src="https://i.pinimg.com/236x/c9/5f/99/c95f99027bf229bb6504cbb7f4bca35f.jpg" alt="Smoothie au beurre">
+        <p>prix:60dhs</p>
+    </div>
+    <div class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <h3>Jus de persil</h3>
+        <img src="https://i.pinimg.com/236x/fd/55/66/fd5566948c8869e031dfadbcf2466ac5.jpg" alt="Jus de persil">
+        <p>prix:50dhs</p>
+    </div>
+    <div class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <h3>Smoothie au lait coco  </h3>
+        <img src="https://i.pinimg.com/236x/23/ad/ba/23adbacbcc5d6020a5bfa2f650a7b31b.jpg" alt="Smoothie au lait de coco ">
+        <p>prix:70dhs</p> 
+    </div>
+</div>
+
+<div class="menu-container">
+    <h2 style="color: #41614e;">BOISSONS CHAUDES</h2>
+    <div class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <h3>Thé vert  </h3>
+        <img src="https://i.pinimg.com/236x/7a/3b/e8/7a3be82b0fb2e0034f7765096e5dbfba.jpg" alt="Thé vert ">
+         <p>prix:40dhs</p>
+    </div>
+    <div class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <h3>Tisane à la menthe</h3>
+        <img src="https://i.pinimg.com/236x/d0/d5/6a/d0d56aa2d8f2e9fb4b772ce92f40086f.jpg" alt="Tisane à la menthe">
+        <p>prix:45dhs</p> 
+    </div>
+    <div class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <h3>Lait d'or au curcuma</h3>
+        <img src="https://i.pinimg.com/236x/6c/7a/e9/6c7ae91148b878f80f15a6b5f827c084.jpg" alt="Lait d'or au curcuma ">
+        <p>prix:50dhs</p>
+    </div>
+    <div class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <h3>Infusion de fleurs </h3>
+        <img src="https://i.pinimg.com/236x/d5/9d/c7/d59dc7355801db322e2c1a7f1adaea1b.jpg" alt="Infusion de fleurs">
+        <p>prix:40dhs</p>
+    </div>
+    <div class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <h3>Café au lait d'amande </h3>
+        <img src="https://i.pinimg.com/236x/a8/52/54/a852540cfc9df5cacabac2407ec4b09c.jpg" alt="Café au lait d'amande">
+        <p>prix:40dhs</p>
+    </div>
+    <div class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <h3>Chocolat chaud</h3>
+        <img src="https://i.pinimg.com/236x/b8/33/39/b83339e8f59463623f498995848e9612.jpg" alt="Chocolat chaud">
+        <p>prix:50dhs</p>
+    </div>
+    <div class="menu-item" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+        <h3>Latté au matcha   </h3>
+        <img src="https://i.pinimg.com/474x/55/a1/8d/55a18d0389b9d223533da10ce0376987.jpg" alt="Latté au matcha ">
+        <p>prix:60dhs</p> 
+    </div>
+</div>
+
+
+
+<footer>
+    <p>&copy; 2024 Restaurant de HIBA. Tous droits réservés.</p>
+</footer>
+
+<script>
+    function zoomIn(element) {
+        element.style.transform = 'scale(1.05)';
+        element.style.transition = 'transform 0.3s ease';
+        element.classList.add('highlighted');
+    }
+
+    function zoomOut(element) {
+        element.style.transform = 'scale(1)';
+        element.style.transition = 'transform 0.3s ease';
+        element.classList.remove('highlighted');
+    }
+</script>
+
+</body>
+</html>

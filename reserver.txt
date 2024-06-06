@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation - Restaurant Hiba</title>
+    <style>
+        body {
+            background-color: #ece5e5;
+            color: #070c07;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+        }
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+        }
+        form h2 {
+            text-align: center;
+            color: #24643b;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        input[type="time"],
+        input[type="number"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        nav {
+            background-color: #7e9177;
+            text-align: center;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+        nav a {
+            color: rgb(32, 59, 40);
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 20px;
+        }
+        input[type="submit"] {
+            background-color: #24643b;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #205433;
+        }
+        #confirmationMessage {
+            display: none;
+            text-align: center;
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="indexx.html">Accueil</a>
+        <a href="menu.html">Menu</a>
+        <a href="propos.html">À propos</a>
+        <a href="reservation.html">Réserver</a>
+    </nav>
+
+    <form id="reservationForm" action="process_reservation.php" method="POST">
+        <h2>Réserver une table</h2>
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+        <label for="phone">Téléphone :</label>
+        <input type="tel" id="phone" name="phone" required>
+        <label for="date">Date :</label>
+        <input type="date" id="date" name="date" required>
+        <label for="time">Heure :</label>
+        <input type="time" id="time" name="time" required>
+        <label for="people">Nombre de personnes :</label>
+        <input type="number" id="people" name="people" min="1" required>
+        <input type="submit" value="Réserver">
+    </form>
+
+    <div id="confirmationMessage" style="display: none;">Votre réservation a été enregistrée avec succès !</div>
+
+    <script>
+        document.getElementById("reservationForm").addEventListener("submit", function(event) {
+            var timeInput = document.getElementById("time").value;
+            var dateInput = document.getElementById("date").value;
+            var validTime = checkTimeValidity(timeInput);
+            var validDate = checkDateValidity(dateInput);
+            if (!validTime || !validDate) {
+                event.preventDefault(); // Empêcher la soumission du formulaire si les validations échouent
+            } 
+            else {
+                // Afficher le message de confirmation si les validations passent
+                document.getElementById("confirmationMessage").style.display = "block";
+            }
+        });
+
+        function checkTimeValidity(timeInput) {
+            var timeParts = timeInput.split(":");
+            var hours = parseInt(timeParts[0], 10);
+            var minutes = parseInt(timeParts[1], 10);
+            if ((hours >= 20 && hours <= 23) || (hours >= 0 && hours < 2)) {
+                return true;
+            } 
+            else {
+                alert("Vous devez entrer une heure entre 20:00 et 02:00.");
+                return false;
+            }
+        }
+
+        function checkDateValidity(dateInput) {
+            var currentDate = new Date();
+            var inputDate = new Date(dateInput);
+            if (inputDate < currentDate) {
+                alert("Vous devez entrer une date future.");
+                return false;
+            } 
+            else { document.getElementById("confirmationMessage").style.display = "block";
+                return true;
+            }
+        }
+    </script>
+</body>
+</html>
